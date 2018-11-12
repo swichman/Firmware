@@ -1,0 +1,23 @@
+#!nsh
+#
+# @name High Altitude Balloon
+#
+# @url https://meicompany.com
+#
+# @type hab
+# @class hab
+#
+# @maintainer Stuart Wichman
+#
+# @board px4fmu-v2 exclude
+#
+
+sh /etc/init.d/rc.hab_defaults
+
+if [ $AUTOCNF = yes ]
+then
+
+fi
+
+# Configure this as hab
+set MAV_TYPE 8

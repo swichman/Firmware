@@ -1,0 +1,25 @@
+#!nsh
+#
+# Fixed wing default parameters
+#
+# NOTE: Script variables are declared/initialized/unset in the rcS script.
+#
+
+set VEHICLE_TYPE hab
+
+if [ $AUTOCNF = yes ]
+then
+	#
+	# Default parameters for High Altitude Balloons.
+	#
+
+	#
+	# FW takeoff acceleration can easily exceed ublox GPS 2G default.
+	#
+	param set GPS_UBX_DYNMODEL 8
+fi
+
+#
+# This is the gimbal pass mixer.
+#
+set MIXER_AUX pass
